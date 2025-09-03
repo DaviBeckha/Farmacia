@@ -14,8 +14,8 @@ import lombok.NoArgsConstructor;
 public class ClienteModel {
 
     @Id@GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_Cliente")
-    private Integer idCliente;
+    @Column(name = "cd_Cliente")
+    private Integer cdCliente;
     @Column(name = "nome_Cliente")
     private String nomeCliente;
     @Column(name = "cpf_Cliente")

@@ -16,7 +16,7 @@ public class FuncionarioModel {
 
     @Id@GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column (name = "cd_Funcionario")
-    private Integer cdfuncionario;
+    private Integer cdFuncionario;
     @Column (name = "nome_Funcionario")
     private String nomeFuncionario;
     @Column (name = "cpf_Funcionario")

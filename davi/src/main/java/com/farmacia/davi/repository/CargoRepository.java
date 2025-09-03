@@ -9,6 +9,6 @@ import java.util.Optional;
 @Repository
 public interface CargoRepository extends JpaRepository <CargoModel, Integer> {
     Optional<CargoModel> findByCdCargo (Integer cdCargo);
-    Optional<CargoModel> findByAllCdCargo (Integer cdCargo);
+
 
 }

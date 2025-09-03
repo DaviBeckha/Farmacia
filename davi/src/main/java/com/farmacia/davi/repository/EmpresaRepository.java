@@ -9,5 +9,5 @@ import java.util.Optional;
 @Repository
 public interface EmpresaRepository extends JpaRepository<EmpresaModel, Integer> {
     Optional<EmpresaModel> findByCdEmpresa (Integer cdEmpresa);
-    Optional<EmpresaModel> findByAllCdEmpresa (Integer cdEmpresa);
+
 }

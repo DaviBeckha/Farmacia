@@ -16,7 +16,6 @@ public record FuncionarioDto(
         String emailFuncionario,
 
         @NotNull (message = "Valor não pode ser nulo")
-        @Negative (message = "Valor negativo!!!! (CLT também tem fámilia)")
         Double salario,
 
         @NotBlank (message = "Cargo precisa ser preenchido.")
