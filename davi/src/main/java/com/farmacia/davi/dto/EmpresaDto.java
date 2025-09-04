@@ -15,6 +15,7 @@ public record EmpresaDto(
         @NotBlank(message = "Precisa preencher o telefone")
         String telefone,
 
+
         @Email
         String email
 

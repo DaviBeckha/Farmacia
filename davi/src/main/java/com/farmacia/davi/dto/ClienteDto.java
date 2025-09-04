@@ -10,6 +10,7 @@ public record ClienteDto(
         @Size (min = 2, max = 200)
         String nomeCliente,
 
+        @NotBlank(message = "Cpf não pode ser nulo.")
         @Pattern (regexp="\\d{11}")
         String cpfCliente,
 
