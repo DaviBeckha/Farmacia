@@ -23,11 +23,11 @@ public class FuncionarioModel {
     private String cpfFuncionario;
     @Column (name = "email_Funcionario")
     private String emailFuncionario;
-    @Column (name = "salario")
+    @Column (name = "num_salario")
     private Double salario;
-    @Column (name = "cargo")
+    @Column (name = "ds_cargo")
     private String cargo;
-    @Column (name = "codigo_cargo")
+    @Column (name = "cd_cargo")
     private Integer cdCargo;
 
 }

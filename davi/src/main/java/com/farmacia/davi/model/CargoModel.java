@@ -16,6 +16,6 @@ public class CargoModel {
     @Id@GeneratedValue (strategy = GenerationType.IDENTITY)
     @Column (name = "cd_cargo")
     private Integer cdCargo;
-    @Column (name = "nome_Cargo")
+    @Column (name = "ds_nome_Cargo")
     private String nomeCargo;
 }

@@ -6,11 +6,11 @@ import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
 public record ClienteDto(
-        @NotBlank (message = "Não pode deixar nome do cliente nulo")
+        @NotBlank (message = "Não pode deixar nome do cliente vazio")
         @Size (min = 2, max = 200)
         String nomeCliente,
 
-        @NotBlank(message = "Cpf não pode ser nulo.")
+        @NotBlank(message = "Cpf não pode ser vazio")
         @Pattern (regexp="\\d{11}")
         String cpfCliente,
 

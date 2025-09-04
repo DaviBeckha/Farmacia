@@ -4,8 +4,8 @@ import jakarta.validation.constraints.*;
 
 public record EmpresaDto(
 
-        @NotNull (message = "Nome da empresa não pode ser nulo")
-        @Size(min = 3, max = 300, message = "Nome da empresa não pode ser menor que 3 e maior que 300")
+        @NotNull (message = "Nome da empresa não pode ser vazio")
+        @Size(min = 3, max = 100, message = "Nome da empresa não pode ser menor que 3 e maior que 100")
         String nomeEmpresa,
 
         @NotNull (message = "Precisa preencher o CPNJ")

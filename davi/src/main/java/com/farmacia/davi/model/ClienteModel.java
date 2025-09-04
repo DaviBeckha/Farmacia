@@ -16,13 +16,13 @@ public class ClienteModel {
     @Id@GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "cd_Cliente")
     private Integer cdCliente;
-    @Column(name = "nome_Cliente")
+    @Column(name = "ds_nome_Cliente")
     private String nomeCliente;
-    @Column(name = "cpf_Cliente")
+    @Column(name = "ds_cpf_Cliente")
     private String cpfCliente;
-    @Column(name = "telefone_Cliente")
+    @Column(name = "num_telefone_Cliente")
     private String telefone;
-    @Column(name = "email_Cliente")
+    @Column(name = "ds_email_Cliente")
     private String emailCliente;
 
 }

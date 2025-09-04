@@ -20,10 +20,10 @@ public class EmpresaModel {
     private Integer cdEmpresa;
     @Column (name = "nome_Empresa")
     private String nomeEmpresa;
-    @Column (name = "cnpj")
+    @Column (name = "num_cnpj")
     private String cnpj;
-    @Column (name = "telefone")
+    @Column (name = "num_telefone")
     private String telefone;
-    @Column (name = "email")
+    @Column (name = "ds_email")
     private String email;
 }
