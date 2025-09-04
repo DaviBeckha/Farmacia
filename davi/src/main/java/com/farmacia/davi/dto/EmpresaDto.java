@@ -10,7 +10,7 @@ public record EmpresaDto(
 
         @NotNull (message = "Precisa preencher o CPNJ")
         @Pattern(regexp="\\d{14}")
-        String cpnj,
+        String cnpj,
 
         @NotBlank(message = "Precisa preencher o telefone")
         String telefone,

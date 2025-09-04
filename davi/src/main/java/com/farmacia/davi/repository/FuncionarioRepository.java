@@ -9,6 +9,6 @@ import java.util.Optional;
 
 @Repository
 public interface FuncionarioRepository extends JpaRepository <FuncionarioModel, Integer> {
-    Optional<FuncionarioModel> findByCdFuncionarios (Integer cdFuncionario);
+    Optional<FuncionarioModel> findByCdFuncionario (Integer cdFuncionario);
 
 }

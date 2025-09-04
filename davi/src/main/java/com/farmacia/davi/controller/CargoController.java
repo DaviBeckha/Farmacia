@@ -21,7 +21,7 @@ public class CargoController {
     @Autowired
     private CargoRepository cargoRepository;
 
-
+    @PostMapping
     public ResponseEntity<CargoModel> salvar (@RequestBody @Valid CargoDto cargoDto){
         var cargoModel = new CargoModel();
         BeanUtils.copyProperties(cargoDto, cargoModel);
