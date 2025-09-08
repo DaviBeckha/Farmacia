@@ -18,4 +18,11 @@ public class CargoModel {
     private Integer cdCargo;
     @Column (name = "ds_nome_Cargo")
     private String nomeCargo;
+    @Column (name = "ds_cargo")
+    private String dsCargo;
+
+
+
+
+
 }
