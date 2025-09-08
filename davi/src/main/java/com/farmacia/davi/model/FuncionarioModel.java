@@ -10,8 +10,16 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 
 
+
+
 @Entity
-@Table (name = "TBFUNCIONARIOS")
+@Table (name = "TBFUNCIONARIOS",
+    uniqueConstraints = {
+        @UniqueConstraint(columnNames = {"cpf_funcionario"}),
+        @UniqueConstraint(columnNames = {"email_funcionario"})
+    }
+)
+
 public class FuncionarioModel {
 
     @Id@GeneratedValue(strategy = GenerationType.IDENTITY)

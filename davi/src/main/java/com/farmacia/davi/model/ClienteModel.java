@@ -5,12 +5,19 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 
 @Entity
-@Table(name = "TBCLIENTES")
+@Table(name = "TBCLIENTES",
+    uniqueConstraints = {
+        @UniqueConstraint(columnNames = {"ds_cpf_Cliente"}),
+        @UniqueConstraint(columnNames = {"num_telefone_Cliente"}) ,
+        @UniqueConstraint(columnNames = {"ds_email_Cliente"})
+    }
+)
 public class ClienteModel {
 
     @Id@GeneratedValue(strategy = GenerationType.IDENTITY)
